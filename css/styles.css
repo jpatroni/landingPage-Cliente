@@ -838,6 +838,175 @@ p { margin: 0 0 1em; }
 }
 
 /* =========================================================
+   FOTOS ENMARCADAS
+   ========================================================= */
+
+/* Especialidades: foto + lista */
+.specialties-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* Marco "carta de tarot" */
+.tarot-frame {
+  position: relative;
+  margin: 0;
+  padding: 12px;
+  isolation: isolate;
+}
+/* Segunda carta detrás, girada */
+.tarot-frame::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  z-index: -1;
+  border: 1px solid var(--c-border);
+  border-radius: 18px;
+  background: linear-gradient(160deg, rgba(90, 24, 35, .55), var(--c-surface) 70%);
+  transform: rotate(5deg);
+  transition: transform .6s var(--ease);
+}
+.tarot-frame__card {
+  position: relative;
+  padding: 14px 14px 0;
+  border: 1px solid var(--c-gold);
+  border-radius: 18px;
+  background: linear-gradient(160deg, #241b22, var(--c-surface) 60%);
+  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .8), 0 0 50px -20px rgba(201, 164, 76, .35);
+  transform: rotate(-2deg);
+  transition: transform .6s var(--ease), box-shadow .6s;
+}
+/* Filete dorado interior */
+.tarot-frame__card::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--c-border);
+  border-radius: 13px;
+  pointer-events: none;
+}
+.tarot-frame__img {
+  overflow: hidden;
+  aspect-ratio: 3 / 4.2;
+  border: 1px solid var(--c-border);
+  border-radius: 10px;
+}
+.tarot-frame__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+  transition: transform .9s var(--ease);
+}
+/* Número romano apoyado sobre el borde superior, como en las cartas */
+.tarot-frame__numeral {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  padding: 2px 14px;
+  border: 1px solid var(--c-gold);
+  border-radius: 99px;
+  background: var(--c-bg-alt);
+  font-family: var(--f-label);
+  font-size: .8rem;
+  letter-spacing: .2em;
+  color: var(--c-gold-light);
+}
+.tarot-frame__caption {
+  padding: 14px 0 16px;
+  text-align: center;
+  font-family: var(--f-label);
+  font-size: .9rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--c-gold-light);
+}
+.tarot-frame__corner {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--c-bg-alt);
+  color: var(--c-gold);
+  font-size: .75rem;
+}
+.tarot-frame__corner--tl { top: -11px; left: -11px; }
+.tarot-frame__corner--tr { top: -11px; right: -11px; }
+.tarot-frame__corner--bl { bottom: -11px; left: -11px; }
+.tarot-frame__corner--br { bottom: -11px; right: -11px; }
+
+.tarot-frame:hover .tarot-frame__card {
+  transform: rotate(0) translateY(-6px);
+  box-shadow: 0 40px 70px -25px rgba(0, 0, 0, .85), 0 0 70px -15px rgba(201, 164, 76, .5);
+}
+.tarot-frame:hover::before { transform: rotate(8deg) translateX(8px); }
+.tarot-frame:hover .tarot-frame__img img { transform: scale(1.05); }
+
+/* Mi historia: retrato en medallón */
+.history__head { align-items: center; justify-content: flex-start; }
+.history__intro { flex: 1; }
+.history__head .carousel__controls { align-self: flex-end; }
+
+.medallion {
+  position: relative;
+  flex-shrink: 0;
+  width: 230px;
+  aspect-ratio: 1;
+}
+.medallion__ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  animation: medallion-spin 50s linear infinite;
+}
+.medallion__ring text {
+  font-family: var(--f-label);
+  font-size: 10.5px;
+  letter-spacing: 3.2px;
+  fill: var(--c-gold);
+}
+@keyframes medallion-spin { to { transform: rotate(360deg); } }
+.medallion__img {
+  position: absolute;
+  inset: 30px;
+  overflow: hidden;
+  border: 2px solid var(--c-gold);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 6px var(--c-bg),
+    0 0 0 7px var(--c-border),
+    0 0 45px -5px rgba(201, 164, 76, .45);
+  transition: box-shadow .5s;
+}
+.medallion__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform .9s var(--ease);
+}
+.medallion:hover .medallion__img {
+  box-shadow:
+    0 0 0 6px var(--c-bg),
+    0 0 0 7px var(--c-gold),
+    0 0 70px -5px rgba(201, 164, 76, .7);
+}
+.medallion:hover .medallion__img img { transform: scale(1.12); }
+
+@media (prefers-reduced-motion: reduce) {
+  .medallion__ring { animation: none; }
+}
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 /* ---------- Tablet (hasta 960px) ---------- */
@@ -872,6 +1041,11 @@ p { margin: 0 0 1em; }
   .carousel__track { grid-auto-columns: calc((100% - 20px) / 2); }
   .steps { gap: 24px; }
   .bento > .flip--lg { grid-row: span 1; }
+  .specialties-layout { grid-template-columns: 280px 1fr; gap: 36px; align-items: start; }
+  .specialties-layout .tarot-frame { position: sticky; top: 100px; }
+  .medallion { width: 180px; }
+  .medallion__img { inset: 24px; }
+  .medallion__ring text { font-size: 12px; }
   .flip--lg .bento__desc { -webkit-line-clamp: 3; line-clamp: 3; }
 }
 
@@ -895,6 +1069,12 @@ p { margin: 0 0 1em; }
   .form__row { grid-template-columns: 1fr; }
   .form { padding: 24px 20px; }
   .history__head { display: block; }
+  .medallion { margin: 0 auto 28px; width: 200px; }
+  .history__intro { text-align: center; }
+  .history__head h2 { margin-inline: auto; }
+  .specialties-layout { grid-template-columns: 1fr; gap: 40px; }
+  .tarot-frame { width: min(100%, 290px); margin: 0 auto; }
+  .specialties-layout .tarot-frame { position: static; }
   .carousel__controls { display: none; }   /* en celular se desliza con el dedo */
   .carousel__track { grid-auto-columns: 84%; gap: 14px; }
   .flip__inner { min-height: 300px; }
