@@ -287,9 +287,9 @@ p { margin: 0 0 1em; }
 .hero__visual:hover::before { inset: -22px; border-color: var(--c-gold); }
 .hero__visual img {
   border-radius: 999px 999px 10px 10px;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: top;
+  object-position: 50% 20%;
   image-rendering: high-quality;
   transition: transform .8s var(--ease);
 }
