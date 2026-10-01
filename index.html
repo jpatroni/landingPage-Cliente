@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alta Magia Tarot · Victor Hugo, Tarotista Internacional</title>
+  <meta name="description" content="Victor Hugo, tarotista internacional. Tarot, amarres, limpiezas espirituales y rituales. Consultas presenciales y a distancia por WhatsApp, Skype o Zoom.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">Alta Magia <span>Tarot</span></a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#historia">Mi historia</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#consultas">Consultas</a>
+        <div class="social social--nav">
+          <a href="https://www.facebook.com/umbral369" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/Umbral369/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <a href="#agenda" class="btn btn--small">Reservar turno</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <!-- Fondo animado "Liquid Chrome" (WebGL) con la paleta de la marca: js/liquid-chrome.js -->
+      <canvas class="hero__bg" id="liquid-bg" aria-hidden="true"></canvas>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Tarotista internacional</p>
+          <h1>Victor Hugo</h1>
+          <p class="hero__claim">Su problema tiene solución.</p>
+          <p class="lead">
+            Trabajos personales y a distancia con la misma efectividad.
+            Me destaco por mis conocimientos, seriedad y gran responsabilidad.
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn js-whatsapp">Consultar por WhatsApp</a>
+            <a href="#agenda" class="btn btn--ghost">Reservar turno</a>
+          </div>
+
+          <dl class="stats">
+            <div><dt>+5.000</dt><dd>amarres efectivos</dd></div>
+            <div><dt>+15.000</dt><dd>problemas resueltos</dd></div>
+            <div><dt>Online</dt><dd>y presencial</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <!-- Foto provisoria recortada de una captura: reemplazar por la original en alta calidad -->
+          <div class="img-wrap">
+            <img src="img/victor-hugo.jpg" alt="Victor Hugo sosteniendo cartas de tarot" width="1136" height="1890">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ESPECIALIDADES ============ -->
+    <section class="section section--alt" id="especialidades">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Especialidades</p>
+          <h2>Especialista en amarres y uniones de pareja</h2>
+          <p>Cuento con más de 5.000 amarres efectivos y 15.000 problemas resueltos.</p>
+        </header>
+
+        <ul class="specialties">
+          <li>Amarres y uniones de pareja</li>
+          <li>Ataduras</li>
+          <li>Retorno del ser amado</li>
+          <li>Alejamiento de enemigos y personas indeseables</li>
+          <li>Limpiezas espirituales y astrales</li>
+          <li>Limpiezas de negocios, empresas y campos</li>
+          <li>Armonizaciones</li>
+          <li>Corte de magia negra y energías nocivas</li>
+          <li>Abre caminos y abundancia económica</li>
+          <li>Cirugías astrales</li>
+          <li>Rituales para atraer la buena suerte</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MI HISTORIA ============ -->
+    <section class="section" id="historia">
+      <div class="container">
+        <div class="history__head">
+          <div>
+            <p class="eyebrow">Mi historia</p>
+            <h2>Una vida dedicada a las <em>ciencias ocultas</em></h2>
+            <p class="history__lead">
+              Mi nombre es Victor Hugo y desde los 10 años viajo a Brasil para aprender todo lo
+              relacionado a los cultos africanos y brasileños.
+            </p>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn" data-dir="-1" aria-label="Anterior">‹</button>
+            <button class="carousel__btn" data-dir="1" aria-label="Siguiente">›</button>
+          </div>
+        </div>
+
+        <!-- Carrusel: se desliza con el dedo, con el mouse (arrastrando) o con las flechas -->
+        <div class="carousel" id="history-carousel">
+          <ol class="carousel__track">
+            <li class="stage">
+              <span class="stage__age">10 — 18 años</span>
+              <h3>Los inicios</h3>
+              <ul>
+                <li>Viajes a Brasil: cultos africanos y brasileños</li>
+                <li>Iniciación en rituales con velas</li>
+                <li>Círculo de magia salamanquera, Santiago del Estero</li>
+              </ul>
+            </li>
+            <li class="stage">
+              <span class="stage__age">21 — 24 años</span>
+              <h3>Formación</h3>
+              <ul>
+                <li>Brujo en ciencias ocultas</li>
+                <li>Cacique de umbanda y jefe en exu (Brasil)</li>
+                <li>Parapsicólogo y tarotista</li>
+                <li>Magia egipcia, numerología y magia planetaria</li>
+              </ul>
+            </li>
+            <li class="stage stage--award">
+              <span class="stage__age">26 — 30 años</span>
+              <h3>Sanación espiritual</h3>
+              <ul>
+                <li>Cirugías espirituales y astrales con José Nilton</li>
+                <li>Diploma de honor por su labor en la tradición Africana</li>
+                <li>Parapsicología operativa y lectura de los sueños</li>
+                <li>Ángeles y arcángeles, magia blanca, hierbas</li>
+              </ul>
+            </li>
+            <li class="stage">
+              <span class="stage__age">32 — 36 años</span>
+              <h3>Tradiciones</h3>
+              <ul>
+                <li>Espiritismo y exorcismo</li>
+                <li>Magia kabbalística</li>
+                <li>Master Reiki, Karuna Reiki y Reiki Jin Kei Do</li>
+                <li>Chamanismo</li>
+              </ul>
+            </li>
+            <li class="stage">
+              <span class="stage__age">39 — 45 años</span>
+              <h3>Maestría</h3>
+              <ul>
+                <li>Magia de sigilos, magia del caos y tarología</li>
+                <li>Péndulo hebreo y tarot de Crowley</li>
+                <li>Radiestesia y Abadía Aurea</li>
+                <li>Los 9 ritos de Munay Ki</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="carousel__dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Servicios</p>
+          <h2>Mis servicios a su disposición</h2>
+        </header>
+
+        <div class="grid bento services-grid" id="magic-bento">
+          <article class="service flip flip--lg" tabindex="0" role="button" aria-pressed="false" aria-label="Tarot: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Adivinación</span>
+                  <span class="service__icon">✦</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Tarot</h3>
+                  <p class="bento__desc">El ser humano pasa por muchas experiencias en la vida, buenas o malas, y tiene la capacidad de elegir el camino correcto. Una de las ventajas que brinda el tarot es la capacidad de predecir el futuro.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Tarot</h3>
+                <p>El ser humano pasa por muchas experiencias en la vida, buenas o malas, y tiene la capacidad de elegir el camino correcto. Una de las ventajas que brinda el tarot es la capacidad de predecir el futuro.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Limpieza espiritual: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Energía</span>
+                  <span class="service__icon">☽</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Limpieza espiritual</h3>
+                  <p class="bento__desc">Los pensamientos y las emociones son frecuencias vibratorias que se proyectan hacia fuera. Lo importante es detectar aquellas que nos hacen daño y transformarlas para mantenernos alineados energéticamente.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Limpieza espiritual</h3>
+                <p>Los pensamientos y las emociones son frecuencias vibratorias que se proyectan hacia fuera. Lo importante es detectar aquellas que nos hacen daño y transformarlas para mantenernos alineados energéticamente.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip flip--wide" tabindex="0" role="button" aria-pressed="false" aria-label="Magia africana: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Amor</span>
+                  <span class="service__icon">♥</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Magia africana</h3>
+                  <p class="bento__desc">Una unión a nivel celestial: se toma la sombra espiritual de ambos mientras duermen y se unen en el altar de “Obundí”, el mayor espíritu africano del amor, con ofrendas de flores, perfumes y otras propias de los rituales.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Magia africana</h3>
+                <p>Una unión a nivel celestial: se toma la sombra espiritual de ambos mientras duermen y se unen en el altar de “Obundí”, el mayor espíritu africano del amor, con ofrendas de flores, perfumes y otras propias de los rituales.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Vudú: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Amor</span>
+                  <span class="service__icon">✧</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Vudú</h3>
+                  <p class="bento__desc">Los efectos de los hechizos de amor Vudú son más rápidos, mejores y más prolongados que otros hechizos mágicos. Una solución fuerte para hacer que esa persona se enamore profundamente de ti.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Vudú</h3>
+                <p>Los efectos de los hechizos de amor Vudú son más rápidos, mejores y más prolongados que otros hechizos mágicos. Una solución fuerte para hacer que esa persona se enamore profundamente de ti.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Magia negra: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Amarres</span>
+                  <span class="service__icon">✶</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Magia negra</h3>
+                  <p class="bento__desc">Los amarres con magia negra son uno de los trabajos más buscados en el mundo esotérico tradicional. Sus efectos se pueden observar en pocas horas.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Magia negra</h3>
+                <p>Los amarres con magia negra son uno de los trabajos más buscados en el mundo esotérico tradicional. Sus efectos se pueden observar en pocas horas.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Reiki: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Sanación</span>
+                  <span class="service__icon">☀</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Reiki</h3>
+                  <p class="bento__desc">Palabra japonesa compuesta por Rei, «universal», y Ki, «energía». Técnica de sanación actualizada por Mikao Usui a partir de un antiguo arte japonés.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Reiki</h3>
+                <p>Palabra japonesa compuesta por Rei, «universal», y Ki, «energía». Técnica de sanación actualizada por Mikao Usui a partir de un antiguo arte japonés.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Radiestesia: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Energía</span>
+                  <span class="service__icon">◈</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Radiestesia</h3>
+                  <p class="bento__desc">Detecta los campos electromagnéticos en personas, plantas, objetos y lugares, y permite captar dónde la energía está disminuida, estancada, bloqueada o negativa.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Radiestesia</h3>
+                <p>Detecta los campos electromagnéticos en personas, plantas, objetos y lugares, y permite captar dónde la energía está disminuida, estancada, bloqueada o negativa.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Péndulo hebreo: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Sanación</span>
+                  <span class="service__icon">◇</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Péndulo hebreo</h3>
+                  <p class="bento__desc">Tiene la facultad de detectar y sanar: ayuda al diagnóstico y a la curación, trabajando con los 7 chakras del cuerpo, desde el coxis hasta la coronilla.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Péndulo hebreo</h3>
+                <p>Tiene la facultad de detectar y sanar: ayuda al diagnóstico y a la curación, trabajando con los 7 chakras del cuerpo, desde el coxis hasta la coronilla.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Velomancia: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Rituales</span>
+                  <span class="service__icon">♁</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Velomancia</h3>
+                  <p class="bento__desc">La magia y las velas están absolutamente unidas: no hay hechizo o ritual en que no estén presentes. Nuestra predisposición y nuestro deseo son indispensables en todo trabajo mágico.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Velomancia</h3>
+                <p>La magia y las velas están absolutamente unidas: no hay hechizo o ritual en que no estén presentes. Nuestra predisposición y nuestro deseo son indispensables en todo trabajo mágico.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Magia ceremonial: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Rituales</span>
+                  <span class="service__icon">✠</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Magia ceremonial</h3>
+                  <p class="bento__desc">Invocación de entidades o fuerzas sobrenaturales mediante pasos y palabras: a cada gesto o ritual le sigue otro, y a cada gesto, una palabra determinada.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Magia ceremonial</h3>
+                <p>Invocación de entidades o fuerzas sobrenaturales mediante pasos y palabras: a cada gesto o ritual le sigue otro, y a cada gesto, una palabra determinada.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Magia egipcia: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Tradición</span>
+                  <span class="service__icon">☥</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Magia egipcia</h3>
+                  <p class="bento__desc">Presente en el Antiguo Egipto desde sus comienzos, del faraón a las clases más humildes. La fórmula mágica era el instrumento más antiguo y seguro para operar sobre el mundo sutil.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Magia egipcia</h3>
+                <p>Presente en el Antiguo Egipto desde sus comienzos, del faraón a las clases más humildes. La fórmula mágica era el instrumento más antiguo y seguro para operar sobre el mundo sutil.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service flip" tabindex="0" role="button" aria-pressed="false" aria-label="Alquimia: tocá para ver más">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="bento__top">
+                  <span class="bento__label">Tradición</span>
+                  <span class="service__icon">△</span>
+                </div>
+                <div class="bento__body">
+                  <h3>Alquimia</h3>
+                  <p class="bento__desc">Ciencia espiritual basada en el poder del pensamiento para incidir sobre la realidad. Permite desarrollar una mente mágica que moldee a voluntad las circunstancias.</p>
+                  <span class="flip__hint">Ver más ↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Alquimia</h3>
+                <p>Ciencia espiritual basada en el poder del pensamiento para incidir sobre la realidad. Permite desarrollar una mente mágica que moldee a voluntad las circunstancias.</p>
+                <a href="#" class="btn btn--small js-whatsapp">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="services-swipe-hint">Deslizá para ver más →</p>
+      </div>
+    </section>
+
+    <!-- ============ BANNER ============ -->
+    <section class="banner">
+      <div class="container">
+        <p class="banner__title">No más sufrimientos y lágrimas.</p>
+        <p class="banner__text">Resultados reales a problemas de amor y parejas. Rituales con asombrosos resultados.</p>
+        <a href="#" class="btn js-whatsapp">Quiero mi consulta</a>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTAS A DISTANCIA ============ -->
+    <section class="section" id="consultas">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Consultas a distancia</p>
+          <h2>Sin moverte de tu casa</h2>
+          <p>Consultas y lectura de tarot por WhatsApp, Skype o Zoom.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Coordinamos</h3>
+            <p>Escribime por WhatsApp y acordamos día y horario.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Realizás el pago</h3>
+            <p>Por PayPal, Mercado Pago, transferencia o depósito bancario.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Tu consulta</h3>
+            <p>Recibís consejos y una orientación profesional que cambiará tu vida.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ AGENDA DE TURNOS ============ -->
+    <!-- Lógica y configuración en js/agenda.js (por ahora la disponibilidad es simulada) -->
+    <section class="section section--alt" id="agenda">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Agenda</p>
+          <h2>Reservá tu <em>turno</em></h2>
+          <p>Elegí el tipo de consulta, el día y el horario que mejor te queden.</p>
+        </header>
+
+        <div class="booking" id="booking">
+          <ol class="booking__steps">
+            <li class="is-active" data-step="1"><span>1</span>Consulta</li>
+            <li data-step="2"><span>2</span>Día y horario</li>
+            <li data-step="3"><span>3</span>Tus datos</li>
+          </ol>
+
+          <!-- Paso 1: tipo de consulta y modalidad -->
+          <div class="booking__panel is-active" data-panel="1">
+            <h3 class="booking__title">¿Qué tipo de consulta necesitás?</h3>
+            <div class="choice-grid" id="booking-services"></div>
+
+            <h3 class="booking__title">¿Cómo preferís hacerla?</h3>
+            <div class="chips" id="booking-modes"></div>
+
+            <div class="booking__nav">
+              <span></span>
+              <button type="button" class="btn" data-next disabled>Continuar</button>
+            </div>
+          </div>
+
+          <!-- Paso 2: calendario + horarios -->
+          <div class="booking__panel" data-panel="2">
+            <div class="schedule">
+              <div class="calendar">
+                <div class="calendar__head">
+                  <button type="button" class="calendar__nav" data-month="-1" aria-label="Mes anterior">‹</button>
+                  <strong id="calendar-month"></strong>
+                  <button type="button" class="calendar__nav" data-month="1" aria-label="Mes siguiente">›</button>
+                </div>
+                <div class="calendar__weekdays">
+                  <span>Lu</span><span>Ma</span><span>Mi</span><span>Ju</span><span>Vi</span><span>Sá</span><span>Do</span>
+                </div>
+                <div class="calendar__days" id="calendar-days"></div>
+              </div>
+
+              <div class="slots">
+                <p class="slots__date" id="slots-date">Elegí un día en el calendario</p>
+                <div class="slots__grid" id="slots-grid"></div>
+                <p class="slots__tz" id="slots-tz"></p>
+              </div>
+            </div>
+
+            <div class="booking__nav">
+              <button type="button" class="btn btn--ghost" data-prev>Volver</button>
+              <button type="button" class="btn" data-next disabled>Continuar</button>
+            </div>
+          </div>
+
+          <!-- Paso 3: datos personales -->
+          <div class="booking__panel" data-panel="3">
+            <div class="booking__confirm">
+              <form class="form form--plain" id="booking-form">
+                <div class="form__row">
+                  <label>Nombre<input type="text" name="nombre" required></label>
+                  <label>Apellido<input type="text" name="apellido" required></label>
+                </div>
+                <div class="form__row">
+                  <label>Fecha de nacimiento<input type="date" name="nacimiento" required></label>
+                  <label>Teléfono / WhatsApp<input type="tel" name="telefono" required placeholder="+54 9 11 ..."></label>
+                </div>
+                <label>Email (opcional)<input type="email" name="email"></label>
+                <label>Comentario (opcional)<textarea name="comentario" rows="3" placeholder="Contame brevemente tu situación"></textarea></label>
+                <label class="form__check">
+                  <input type="checkbox" name="mayor" required> Confirmo que soy mayor de 18 años
+                </label>
+                <div class="booking__nav">
+                  <button type="button" class="btn btn--ghost" data-prev>Volver</button>
+                  <button type="submit" class="btn">Confirmar turno</button>
+                </div>
+              </form>
+
+              <aside class="summary" id="booking-summary"></aside>
+            </div>
+          </div>
+
+          <!-- Turno confirmado -->
+          <div class="booking__panel booking__done" data-panel="done">
+            <span class="booking__done-icon">✦</span>
+            <h3>¡Turno reservado!</h3>
+            <p id="booking-done-text"></p>
+            <p class="note">Para confirmarlo, envianos el detalle por WhatsApp y te pasamos los datos de pago.</p>
+            <div class="booking__nav booking__nav--center">
+              <a href="#" class="btn" id="booking-wa" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+              <button type="button" class="btn btn--ghost" data-restart>Reservar otro turno</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section cta" id="contacto">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Enviame tu consulta</p>
+          <h2>Encontremos la solución a tus problemas</h2>
+          <p>Las consultas se reciben por WhatsApp. En el mensaje indicá tu <strong>nombre, apellido y fecha de nacimiento</strong>.</p>
+
+          <ul class="phones">
+            <li><span>Desde Argentina</span><a href="tel:+541168277598">(011) 6827-7598</a></li>
+            <li><span>Desde el exterior</span><a href="tel:+541168277598">+54 (011) 6827-7598</a></li>
+          </ul>
+
+          <div class="social social--contact">
+            <a href="https://www.facebook.com/umbral369" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/Umbral369/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+
+          <p class="note">Servicio disponible solo para mayores de 18 años.</p>
+        </div>
+
+        <!-- El formulario arma el mensaje y abre WhatsApp con los datos completos -->
+        <form class="form" id="contact-form">
+          <div class="form__row">
+            <label>Nombre<input type="text" name="nombre" required></label>
+            <label>Apellido<input type="text" name="apellido" required></label>
+          </div>
+          <label>Fecha de nacimiento<input type="date" name="nacimiento" required></label>
+          <label>Tu consulta<textarea name="mensaje" rows="4" placeholder="Contame brevemente tu situación"></textarea></label>
+          <label class="form__check">
+            <input type="checkbox" name="mayor" required> Confirmo que soy mayor de 18 años
+          </label>
+          <button type="submit" class="btn btn--block">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">Alta Magia <span>Tarot</span></span>
+      <div class="social">
+        <a href="https://www.facebook.com/umbral369" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/Umbral369/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+      <p>© <span id="year"></span> Victor Hugo · Tarotista Internacional · Solo mayores de 18 años</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-float js-whatsapp" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.300 1.700 6.600 1.700 7.200 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.400c-2.100 0-4.100-.6-5.900-1.600l-.4-.3-3.800 1.200 1.200-3.700-.3-.4a10.400 10.400 0 0 1-1.700-5.800C5.100 10 10 5.300 16 5.300S26.900 10 26.900 15.800 22 26.400 16 26.400zm5.900-7.900c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.200-.2.300-.8 1-1 1.200-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.400c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.400-.3.300-1.200 1.100-1.200 2.700s1.200 3.200 1.400 3.400c.2.200 2.400 3.600 5.800 5 .8.300 1.400.5 1.900.7.8.2 1.500.2 2.100.1.6-.1 1.900-.8 2.200-1.500.3-.7.3-1.400.2-1.500-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="js/liquid-chrome.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/magic-bento.js"></script>
+  <script src="js/agenda.js"></script>
+</body>
+</html>
